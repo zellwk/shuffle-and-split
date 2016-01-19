@@ -12,8 +12,8 @@ function splitArr (a, n) {
   return out
 }
 
-function shuffleAndGroup (arr, num) {
+function shuffleAndSplit (arr, num) {
   return splitArr(_.shuffle(arr), num)
 }
 
-module.exports = shuffleAndGroup
+module.exports = shuffleAndSplit
