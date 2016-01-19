@@ -1,4 +1,4 @@
-var _ = require('lodash')
+var shuffle = require('lodash.shuffle')
 
 function splitArr (a, n) {
   var len = a.length
@@ -13,7 +13,7 @@ function splitArr (a, n) {
 }
 
 function shuffleAndSplit (arr, num) {
-  return splitArr(_.shuffle(arr), num)
+  return splitArr(shuffle(arr), num)
 }
 
 module.exports = shuffleAndSplit
